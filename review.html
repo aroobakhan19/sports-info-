@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      .container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .stars {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        list-style: none;
+        transform: rotate(180deg);
+        list-style-type: none;
+        padding-inline-start: 0;
+      }
+      .stars input[type="radio"] {
+        display: none;
+      }
+
+      .stars label {
+        font-size: 40px;
+        color: #ccc;
+        cursor: pointer;
+        list-style: none;
+        transform: rotate(180deg);
+      }
+
+      .stars label:hover,
+      .stars label:hover ~ label,
+      .stars input:checked ~ label {
+        color: #ffcc00;
+      }
+
+      #rating {
+        font-size: 20px;
+        margin-top: 10px;
+        color: #333;
+      }
+
+      #review-btn {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      
+      }
+
+      #review-btn:hover {
+        background-color: #0056b3;
+      }
+
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar nav-bar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="col-4">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="logo.png"
+              style="max-width: 100%; height: auto"
+              id="logo"
+              alt=""
+          /></a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            ><img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios/50/FFFFFF/menu-squared-2.png"
+              alt="menu-squared-2"
+          /></span>
+        </button>
+        <div class="col-8">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navul">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                  id="nava"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="nava"
+                >
+                  SPORTS
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark dro"
+                  aria-labelledby="navbardropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="games/football.html"
+                      >Football</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="games/judo.html">Judo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="games/tennis.html">Tennis</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="games/motorcycleracing.html"
+                      >Motorcycle Racing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="games/volleyball.html"
+                      >Volley Ball</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="games/golf.html">Golf</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="games/chess.html">Chess</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="games/billiards.html"
+                      >Billiards</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="games/badminton.html"
+                      >Badminton</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="games/swimming.html"
+                      >Swimming</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="games/athletics.html"
+                      >Athletics</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html" id="nava"
+                  >CONTACT US</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html" id="nava">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="review.html" id="nava">REVIEW</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h2>Please Rate Us</h2>
+      <div class="stars">
+        <input type="radio" id="star5" name="rating" value="5" /><label
+          for="star5"
+          >&#9733;</label
+        >
+        <input type="radio" id="star4" name="rating" value="4" /><label
+          for="star4"
+          >&#9733;</label
+        >
+        <input type="radio" id="star3" name="rating" value="3" /><label
+          for="star3"
+          >&#9733;</label
+        >
+        <input type="radio" id="star2" name="rating" value="2" /><label
+          for="star2"
+          >&#9733;</label
+        >
+        <input type="radio" id="star1" name="rating" value="1" /><label
+          for="star1"
+          >&#9733;</label
+        >
+      </div>
+      <div id="rating"></div>
+      <textarea
+        id="comment"
+        placeholder="Leave your comments here..."
+      ></textarea>
+      <button id="review-btn">Submit Review</button>
+    </div>
+
+    <script>
+      const stars = document.querySelectorAll(".stars input");
+      const ratingDisplay = document.getElementById("rating");
+      const commentInput = document.getElementById("comment");
+      const reviewBtn = document.getElementById("review-btn");
+
+      stars.forEach((star) => {
+        star.addEventListener("change", (e) => {
+          ratingDisplay.textContent = `You rated us ${e.target.value} stars.`;
+        });
+      });
+
+      reviewBtn.addEventListener("click", () => {
+        const checkedStar = document.querySelector(".stars input:checked");
+        const comment = commentInput.value.trim();
+        if (checkedStar) {
+          alert(
+            `Thank you for your ${checkedStar.value}-star review!${
+              comment ? `\n\nComment: ${comment}` : ""
+            }`
+          );
+        } else {
+          alert("Please select a rating before submitting your review.");
+        }
+      });
+    </script>
+
+<footer class="text-center bg-body-tertiary">
+  <!-- Grid container -->
+  <div class="container-fluid foo pt-4 g-0 mt-5">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=fb&rlz=1C1GCEU_enPK864PK864&oq=fb&gs_lcrp=EgZjaHJvbWUyFAgAEEUYORhDGIMBGLEDGIAEGIoFMhIIARAuGEMYxwEY0QMYgAQYigUyEggCEAAYQxiDARixAxiABBiKBTIPCAMQLhhDGNQCGIAEGIoFMhMIBBAuGIMBGMcBGLEDGNEDGIAEMhIIBRAAGEMYgwEYsQMYgAQYigUyDAgGEC4YQxiABBiKBTIGCAcQRRg" target="_blank" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+      <!-- Twitter -->
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyDMsS05XYDRgdGDwYi8pzywpSS0CAFnOB00&q=twitter&rlz=1C" target="_blank" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+      <!-- Google -->
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1GC"  target="_blank" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+      <!-- Instagram -->
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=instagram&rlz=1C1GCEU_enPK864PK864&oq=ins&gs_lcrp=EgZjaHJvbWUqFQgBEA"  target="_blank"role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+      <!-- Linkedin -->
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://pk.linkedin.com/" target="_blank" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+      <!-- Github -->
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcoqiwoyE1XYDRgdGDwYkvPLMkoTQIAWC4HFA&q=github&rlz=1C1"  target="_blank" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+    </section>
+    <!-- Section: Social media -->
+     <!-- Copyright -->
+  <div class="text-center foo p-3" id="copy">
+    © 2020 Copyright:  sports.info\.com
+  
+  </div>
+</div>
+</footer>
+                 
+                    
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+      import { Ripple, initMDB } from "mdb-ui-kit";
+      initMDB({ Ripple });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports.Info</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Sports</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+          
+          
+<style>
+            
+.card {
+        margin-bottom: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease-in-out;
+        display: flex;
+        align-items: stretch;
+        height: 100%;
+
+} 
+.col-md-3{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.btn-info {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: all 0.4s ease-in-out;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card-img-top{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+
+<nav class="navbar nav-bar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="col-4">
+      <a class="navbar-brand" href="#"><img src="logo.png" style="max-width: 100%; height: auto;" id="logo" alt=""></a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/menu-squared-2.png" alt="menu-squared-2"/></span>
+    </button>
+    <div class="col-8">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navul">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" id="nava">HOME</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              id="nava">
+              SPORTS
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark   dro" aria-labelledby="navbardropdown">
+              <li><a class="dropdown-item" href="games/football.html">Football</a></li>
+              <li><a class="dropdown-item" href="games/judo.html">Judo</a></li>
+              <li><a class="dropdown-item" href="games/tennis.html">Tennis</a></li>
+              <li><a class="dropdown-item" href="games/motorcycleracing.html">Motorcycle Racing</a></li>
+              <li><a class="dropdown-item" href="games/volleyball.html">Volley Ball</a></li>
+              <li><a class="dropdown-item" href="games/golf.html">Golf</a></li>
+              <li><a class="dropdown-item" href="games/chess.html">Chess</a></li>
+              <li><a class="dropdown-item" href="games/billiards.html">Billiards</a></li>
+              <li><a class="dropdown-item" href="games/badminton.html">Badminton</a></li>
+              <li><a class="dropdown-item" href="games/swimming.html">Swimming</a></li>
+              <li><a class="dropdown-item" href="games/athletics.html">Athletics</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html" id="nava">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html" id="nava">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="review.html" id="nava">REVIEW</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- carousel -->
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="5000">
+    <div class="carousel-inner ">
+      <div class="carousel-item active">
+        <img src="img/pexels-football-wife-1618269 (1).jpg" class="d-block w-100 " alt="...">
+        <div class="carousel-caption carao-cap ">
+          <div class="content carao-con">
+            <h1>Soccer</h1>
+            <h2>Exploring the Global Phenomenon of El Clásico </h2>
+            <p>El Clásico, the fiercely contested rivalry between FC Barcelona and Real Madrid, transcends mere sport to
+              embody regional pride, political tension, and historical rivalry. With roots dating back to the early 20th
+              century, this clash of titans consistently draws millions of viewers worldwide, captivating fans with its
+              intensity and drama.</p>
+            <p> Whether played at Barcelona's Camp Nou or Madrid's Santiago Bernabéu, El Clásico remains one of soccer's
+              most anticipated events, showcasing the best talents and the deepest emotions in the sport.</p>
+          </div>
+        </div>
+      </div>
+      <!-- //button// -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+
+
+      <div class="carousel-item">
+        <img src="img/pexels-jim-de-ramos-1263426.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption carao-cap">
+          <div class="content">
+            <h1>Tennis</h1>
+            <h2>The Allure of the Grand Slams </h2>
+            <p>Tennis, often regarded as a sport of precision and finesse, captivates millions around the globe,
+              especially during the four Grand Slam tournaments. These prestigious events—Australian Open, French Open,
+              Wimbledon, and the US Open—showcase the pinnacle of skill, athleticism, and mental fortitude.</p>
+            <p>From the grass courts of Wimbledon to the clay of Roland Garros, each tournament offers a unique
+              challenge, attracting both seasoned veterans and emerging talents. With its rich history and tradition,
+              tennis continues to inspire and thrill fans worldwide.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- //button// -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="carousel-item">
+        <img src="img/pexels-pixabay-248547.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption carao-cap">
+          <div class="content">
+            <h1>Basketball</h1>
+            <h2>The Evolution of the Three-Point Shot</h2>
+            <p>In the fast-paced world of basketball, the three-point shot has become a game-changer. Initially viewed
+              with skepticism, this long-range shot has revolutionized the sport, altering strategies and redefining
+              player roles. From the era of sharpshooters like Reggie Miller to the modern dominance of Stephen Curry,
+              the three-point shot has evolved into a potent weapon, capable of turning the tide of any game. As teams
+              emphasize spacing and outside shooting, the three-pointer's influence on basketball culture only continues
+              to grow.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- //button// -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="carousel-item">
+        <img src="img/pexels-pixabay-262524.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption carao-cap">
+          <div class="content">
+            <h1>Golf</h1>
+            <h2>The Majesty of Augusta National</h2>
+            <p>Augusta National Golf Club, home to the prestigious Masters Tournament, stands as a symbol of golfing
+              excellence and tradition. With its meticulously manicured fairways, challenging greens, and iconic
+              landmarks like Amen Corner, Augusta embodies the essence of the sport. Each spring, the world's top
+              golfers converge upon this hallowed ground, vying for the coveted green jacket and etching their names
+              into golfing history. Beyond the competition, Augusta's beauty and aura captivate fans, making it a
+              must-visit destination for any golf enthusiast.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- //button// -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="carousel-item">
+        <img src="img/pexels-victor-freitas-841130.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption carao-cap">
+          <div class="content">
+            <h1>Cricket</h1>
+            <h2>The Thrills of T20 Cricket</h2>
+            <p>T20 cricket, characterized by its fast-paced action and explosive hitting, has transformed the
+              traditional game, captivating audiences with its electrifying atmosphere and high-scoring encounters.
+              Originating in England but gaining popularity worldwide, T20 cricket condenses the sport into a thrilling
+              spectacle, featuring nail-biting finishes and dramatic moments. Leagues like the Indian Premier League
+              (IPL) and the Big Bash League (BBL) have elevated T20 cricket to new heights, attracting top talent and
+              global audiences alike. With its blend of athleticism and entertainment, T20 cricket continues to redefine
+              the boundaries of the sport.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- //button// -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      
+      
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        </div>
+      </div>
+
+     
+  <!-- main -->
+  <h1 id="azii"><i>Related News</i></h1>
+  <div class="container-fluid ">
+    <div class="row g-0">
+      <div class="col-6">
+        <h1>Latest News about the UCL:</h1>
+<p>
+  
+
+  As of today, February 28, 2024, the<u>2023/2024 UEFA </u>Champions League is still ongoing, with the Round of 16 stage just completed. Here's a quick summary:
+
+  <h3>Completed matches: </h3>The first leg of the Round of 16 has concluded. You can find the results of the completed matches, including scores and venues, in my previous response.
+ <h3> Upcoming matches: </h3>The second leg of the Round of 16 is scheduled for March 5th and 6th, 2024. You can find the upcoming fixtures, including teams and venues, by searching online for "UCL 2024 fixtures".
+  It's difficult to determine definitively which team is currently "the best" as there are various factors to consider beyond just wins and losses. However, some teams have consistently performed well throughout the competition, including:
+  <br>
+ <b> FC Bayern Munich:</b> <br>
+ They remain undefeated in the competition and are known for their strong attacking style and overall consistency. <br>
+ <b> Real Madrid:</b> <br> The defending champions, they possess experience and a winning mentality, making them a force to be reckoned with. <br>
+ <b> Manchester City:</b> <br> With their possession-based approach and talented squad, they are always a threat to any opponent.
+</P>
+
+
+
+</p>
+
+</div>
+      <div class="col-6" id="color">
+        
+          <video id ="video" loop autoplay muted >
+            <source src="img/videos/141074 (720p).mp4" type="video/mp4">
+          </video>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- //cards// -->
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/kaleemullahkhan.jpg" class="card-img-top" alt="..."  height="250">
+                  <div class="card-body">
+                    <h5 class="card-title">Kaleemullah Khan</h5>
+                    <p class="card-text"> Kaleemullah khan is a  Pakistani Footballer Known for his goal-scoring record internationality.
+                      He was a key player for clubs in Pakistan.
+                    </p>
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#md1">
+                      More
+                    </button>
+                    <div class="modal" id="md1" data-bs-backdrop="static" data-bs-keyboard="false">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1><b>Kaleemullah Khan(Footballler)</b></h1>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                              Kaleemullah Khan was born on September 20, 1992 in Chaman, Balochistan, Pakistan.<br> He is a professional footballer who plays as a midfielder or forward for the Pakistan national team and Iraqi Premier League club Zakho FC.
+        
+        Khan began his career with Khan Research Laboratories<br> FC in 2009. He then moved to KRL FC in 2011,<br> where he won the Pakistan Premier League title in 2012. In 2014, he signed for FC Dordoi Bishkek in Kyrgyzstan, where he won the Kyrgyzstan League title, Kyrgyzstan Cup, and Kyrgyzstan Super Cup.
+        
+        In 2016, Khan moved to the United States to play for FC Tulsa in the United Soccer League. <br>He then moved to Nepal to play for Nepal Police Club in 2017. In 2018, he moved to Bangladesh to play for Sheikh Jamal DC Dhaka.
+        
+        In 2019, Khan signed for Zakho FC in Iraq. He has made 10 appearances for the club, scoring 2 goals.<br>
+        
+        Khan has made 40 appearances for the Pakistan national team, scoring 12 goals.<br> He was part of the Pakistan team that competed at the 2019 AFC Asian Cup.
+        
+        Khan is a versatile player who can play in a variety of attacking roles.<br> He is known for his pace, dribbling, and finishing ability. He is also a strong aerial threat.
+                              </p>
+                          </div>
+                          <div class="modal-footer">
+                          
+                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                          </div>
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/hussainshah.jpg" class="card-img-top"  alt="..." height="250">
+                  <div class="card-body">
+                    <h5 class="card-title"> Syed Hussain Shah</h5>
+                    <p class="card-text">Hussain shah made history by becoming the first Pakistani boxer  to Win an Olympic medal. he Won Many prizes</p>
+                  
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#md2">
+                      More
+                    </button>
+                    <div class="modal" id="md2" data-bs-backdrop="static" data-bs-keyboard="false">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1><b> Syed Hussain Shah(Boxer)</b></h1>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                              Syed Hussain Shah: A retired Pakistani boxer who won the bronze medal in the Middleweight division (71–75 kg) at the 1988 Summer Olympics in Seoul, South Korea. This was the country's first ever Olympic boxing medal. He remains the only Pakistani sportsperson to win an individual medal at the Olympic Games in the last fifty-plus years. Only other Pakistani to ever win an individual Olympic medal is the wrestler Muhammad Bashir, who won a bronze medal at the 1960 Summer Olympics.
+                              </p>
+                          </div>
+                          <div class="modal-footer">
+                            
+                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/anumbandey.jpg" class="card-img-top" alt="..." height="250">
+                  <div class="card-body">
+                    <h5 class="card-title">Anum Bandey</h5>
+                    <p class="card-text">Anum Bandey is a Pakistani Swimmer  who has set several national records in Swimming events. She won Many compitition</p>
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#md3">
+                      More
+                    </button>
+                    <div class="modal" id="md3" data-bs-backdrop="static" data-bs-keyboard="false">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1><b>Anum Bandey(Swimmer)</b></h1>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                              Anum Bandey: Pakistan's Swimming Star
+        Celebrating Accomplishments:<br>
+        
+        Paving the way: Applaud her for being a trailblazer for Pakistani female swimmers, inspiring young girls to embrace the water.<br>
+        Record breaker: Highlight her achievements, breaking national records and representing Pakistan on the world stage.<br>
+        Olympic spirit: Recognize her courage and determination competing at the 2012 London Olympics.
+                             </p>
+                          </div>
+                          <div class="modal-footer">
+                            
+                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                          </div>
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/taimurhasan.jpg" class="card-img-top" alt="..." height="250">
+                  <div class="card-body">
+                    <h5 class="card-title">Taimur Hassan</h5>
+                    <p class="card-text">Taimur Hassan is a renowned Pakistani golfer who has achieved success  nationality & internationality. He won many Tournaments.
+                    </p>
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#md4">
+                      More
+                    </button>
+                    <div class="modal" id="md4" data-bs-backdrop="static" data-bs-keyboard="false">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1><b>Taimur Hassan(Golfer)</b></h1>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                              Taimur Hassan, widely recognized as the most celebrated amateur golfer Pakistan has ever produced, boasts a remarkable career filled with numerous tournament victories and groundbreaking achievements.<br>
+        
+        Dominating the National Scene:<br>
+        
+        (1)15-time National Champion: He holds the record for the most National Amateur Championship titles, winning an astounding 15 times consecutively between 1970 and 1981.<br>
+        (2)Pakistan Open Champion: He secured multiple victories in the prestigious Pakistan Open, further solidifying his dominance within the country.<br>
+                              </p>
+                          </div>
+                          <div class="modal-footer">
+                            
+                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                          </div>
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/jahangirkhan.jpg" class="card-img-top" alt="..." height="250">
+                  <div class="card-body">
+                    <h5 class="card-title">Jahangir Khan</h5>
+                    <p class="card-text"> Jahangir Khan is a widely regarded as one of the greatest squash player for all times. He made a Longest records in squash History.
+                    </p>
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#md5">
+                      More
+                    </button>
+                    <div class="modal" id="md5" data-bs-backdrop="static" data-bs-keyboard="false">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1><b>Jahangir Khan(Player)</b></h1>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                              Jahangir Khan is widely considered the greatest squash player of all time, and his achievements.<br>
+        
+                             <h4>Dominating Records:</h4> 
+                              
+                              (*)Unbeatable Streak: From 1981 to 1986, he boasted an unbeatable streak of 555 consecutive matches, the longest winning streak by any athlete in any top-level professional sport according to Guinness World Records.<br>
+                              (*)World Titles: He claimed the prestigious World Open title six times and the British Open title a record ten times (1982-1991).<br>
+                              (*)Youngest Champion: He became the youngest World Open Champion at the age of 17 and the youngest World Amateur Champion at 15.<br>
+                              </p>
+                          </div>
+                          <div class="modal-footer">
+                            
+                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                          </div>
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/hasansardar.jpg" class="card-img-top" alt="..."height="250">
+                  <div class="card-body">
+                    <h5 class="card-title"> Hasan Sardar</h5>
+                    <p class="card-text"> hasan Sardar is a legendary Pakistani field hockey Player who played a vital role in Pakistan. Pakistan win several tournamwnts by him.
+        
+                    </p>
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#md6">
+                      More
+                    </button>
+                    <div class="modal" id="md6" data-bs-backdrop="static" data-bs-keyboard="false">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1><b>Hasan Sardar(Hockey Player)</b></h1>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                              Hassan Sardar is a legendary field hockey player from Pakistan. He is considered one of the greatest players of all time, and is particularly known for his skills as a center forward. <br>
+                              Here are some of his achievements:<br>
+        
+        1 : Gold medal at the 1984 Summer Olympics in Los Angeles
+        World Cup champion in 1982<br>
+        2 : Asian Games gold medal in 1982
+        Man of the Tournament at the 1982 World Cup
+        Ranked among the "Top 10 greatest field hockey players"<br>
+         3 : Sardar was born in Karachi, Pakistan, in 1957. He started playing hockey at a young age and quickly rose through the ranks. He made his international debut in the early 1980s and soon became a key player for the Pakistani national team.<br>
+        
+        4 : Sardar was known for his speed, agility, and ball skills. <br>
+        Hasan Sardar is a legendary Pakistani field hockey player who played a pivotal role
+            in Pakistan's success in international hockey during the 1980s. He was known for his exceptional
+            goal-scoring ability and leadership on the field, helping Pakistan win several major tournaments,
+            including the Olympic Games and the Hockey World Cup
+
+                             </p>
+                          </div>
+                          <div class="modal-footer">
+                          
+                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/shahhussainshah.jpg" class="card-img-top" alt="..." height="250">
+                  <div class="card-body">
+                    <h5 class="card-title">Shah Hussain Shah</h5>
+                    <p class="card-text">Shah Hussain shah is a Pakistani judako who has represented Pakistan in multiple judo Championships.He won numerous medals.</p>
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#md7">
+                      More
+                    </button>
+                    <div class="modal" id="md7" data-bs-backdrop="static" data-bs-keyboard="false">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1><b>Shah Hussain shah(judako)</b></h1>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                              Shah Hussain Shah is a prominent Pakistani judoka who has made significant contributions to the sport on both the national and international stage.<br>
+                              Here's a summary of his achievements:<br>
+        
+        1 :Competes in the men's -90 kg division.<br>
+        2 : Previously competed in the -100 kg division.<br>
+        3 : Bronze medalist at the 2013 and 2015 Asian Championships.<br>
+        4 : Silver medalist in the U100kg category at the Commonwealth Games, a first for Pakistan.<br>
+        5 : Participated in various World Championships since 2010.<br>
+        6 : Currently based in Japan.<br>
+        7 :Son of Pakistani Olympic boxing medalist Hussain Shah, who won bronze at the 1988 Seoul Olympics.<br>
+        8 :First-ever Pakistani judoka to qualify for the Olympics, representing Pakistan at Rio 2016.<br>
+        
+        
+                              </p>
+                          </div>
+                          <div class="modal-footer">
+                            
+                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                          </div>
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 max-height">
+                <div class="card">
+                  <img src="img/waseemakram.jpg" class="card-img-top" alt="..." height="250">
+                  <div class="card-body">
+                    <h5 class="card-title">Wasim Akram</h5>
+                    <p class="card-text">Wasim Akram is a Cricketor . Wasim akram holds several records in cricket , including the most wicketsin Cricket World Cup.</p>
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#md8">
+                      More
+                    </button>
+                    <div class="modal" id="md8" data-bs-backdrop="static" data-bs-keyboard="false">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1><b>Wasim Akram(Cricketor)</b></h1>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                              Wasim Akram, often referred to as "The Sultan of Swing" is not just a cricketer, he's a legend in the sport. <br>
+        
+        Accolades and Achievements:<br>
+        
+        1 : Regarded as one of the greatest fast bowlers of all time.<br>
+        2 : Highest wicket-taker for Pakistan in Test cricket with 414 wickets.<br>
+        3 : 502 wickets in ODIs, placing him among the top fast bowlers in that format as well.<br>
+        4 : Part of the 1992 Cricket World Cup winning team, Pakistan's only World Cup victory.<br>
+        5 :Led Pakistan to the 1999 Cricket World Cup final.<br>
+        6 : Achieved two hat-tricks, one each in Tests and ODIs.<br>
+        7 : Known for his mastery of swing bowling and his ability to york the batsman.<br>
+        8 : Inducted into the ICC Cricket Hall of Fame in 2009.<br>
+        While cricket is not listed in your request, it's worth mentioning Wasim Akram. He is
+            one of Pakistan's greatest cricketers, known for his exceptional skills as a left-arm fast bowler and a
+            formidable all-rounder. Akram holds several records in cricket, including the most wickets in Cricket
+            World Cup history by a fast bowler.
+                              </p>
+                          </div>
+                          <div class="modal-footer">
+                            
+                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                          </div>
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+      
+
+      <footer class="text-center bg-body-tertiary">
+        <!-- Grid container -->
+        <div class="container-fluid foo pt-4 g-0 mt-5">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=fb&rlz=1C1GCEU_enPK864PK864&oq=fb&gs_lcrp=EgZjaHJvbWUyFAgAEEUYORhDGIMBGLEDGIAEGIoFMhIIARAuGEMYxwEY0QMYgAQYigUyEggCEAAYQxiDARixAxiABBiKBTIPCAMQLhhDGNQCGIAEGIoFMhMIBBAuGIMBGMcBGLEDGNEDGIAEMhIIBRAAGEMYgwEYsQMYgAQYigUyDAgGEC4YQxiABBiKBTIGCAcQRRg" target="_blank" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+      
+            <!-- Twitter -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyDMsS05XYDRgdGDwYi8pzywpSS0CAFnOB00&q=twitter&rlz=1C" target="_blank" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+      
+            <!-- Google -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1GC"  target="_blank" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+      
+            <!-- Instagram -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=instagram&rlz=1C1GCEU_enPK864PK864&oq=ins&gs_lcrp=EgZjaHJvbWUqFQgBEA"  target="_blank"role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+      
+            <!-- Linkedin -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://pk.linkedin.com/" target="_blank" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+            <!-- Github -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcoqiwoyE1XYDRgdGDwYkvPLMkoTQIAWC4HFA&q=github&rlz=1C1"  target="_blank" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+          </section>
+          <!-- Section: Social media -->
+           <!-- Copyright -->
+        <div class="text-center foo p-3" id="copy">
+          © 2020 Copyright:  sports.info\.com
+        
+        </div>
+      </div>
+      </footer>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+                        <script>
+                          import { Ripple, initMDB } from "mdb-ui-kit";
+                          initMDB({ Ripple });
+                        </script>
+                     
+
+                      </html>
